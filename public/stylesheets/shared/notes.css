@@ -1,0 +1,16 @@
+:root {
+    --nav-title-font-size: 3rem;
+    --nav-title-font-weight: bold;
+    --nav-link-font-weight: 300;
+}
+
+.index-item {
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    color: inherit;
+}
+
+.index-item:hover {
+    color: white;
+}

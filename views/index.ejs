@@ -1,1 +1,10 @@
-Middle
+<h2 class="page-header">Recently Added Notes</h2>
+<div>
+    <% notes.forEach(note => { %>
+        <div>
+            <a class="index-item" href="/notes/<%= note.id %>">
+                <%= note.name %>
+            </a>
+        </div>
+    <% }) %>
+  </div>

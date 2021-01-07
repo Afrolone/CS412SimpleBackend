@@ -1,4 +1,12 @@
-<label>Name</label>
-<input type="text" name="name" value="<%= note.name %>">
-<input type="text" name="text" value="<%= note.text %>">
-
+<div class="form-row">
+    <div class="form-item">
+        <label>Note Name</label>
+        <input type="text" name="name" value="<%= note.name %>">
+    </div>  
+</div>
+<div class="form-row">
+    <div class="form-item">
+        <label>Note description</label>
+        <textarea type="text" name="text" value="<%= note.text %>"></textarea>
+    </div>
+</div>

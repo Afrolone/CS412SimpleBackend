@@ -26,10 +26,11 @@ router.get('/new', async (req, res) => {
 
 // Create Note Route
 router.post('/', async (req, res) => {
+    /* for debugging
     console.log("REQQ")
     console.log(req)
     console.log("REQQ BODDYY")
-    console.log(req.body)
+    console.log(req.body) */
 
     const note = new Note({
         name: req.body.name,
