@@ -1,0 +1,8 @@
+<h2>Note name: <%= note.name %></h2>
+<a href="/notes/<%= note.id %>/edit">Edit</a>
+<%- include('../partials/deleteForm',
+            { url: `/notes/${note.id}` }) %>
+<h2>Note text:</h2>
+<p>
+  <%= note.name %>
+</p>

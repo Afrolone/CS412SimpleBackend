@@ -1,0 +1,6 @@
+<h2>Edit Note</h2>
+<form action="/notes/<%= note.id %>?_method=PUT" method="POST">
+  <%- include('_form_field') %>
+  <a href="/notes/<%= note.id %>">Cancel</a>
+  <button type="submit">Update</button>
+</form>

@@ -1,0 +1,14 @@
+<h2>Search Notes</h2>
+<form action = "/notes" method = "GET">
+    <label>Name</label>
+    <input type="text" name="name" value="<%= searchOptions.name %>">
+    <button type="submit">Search</button>
+</form>
+<br>
+<% notes.forEach(note => { %>
+    <div><%= note.name %></div>
+    <a href="/notes/<%= note.id %>">View</a>
+    <a href="/notes/<%= note.id %>/edit">Edit</a>
+    <%- include('../partials/deleteForm',
+              { url: `/notes/${note.id}` }) %>
+<% }) %>
